@@ -317,24 +317,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0a0a0', end
 	height: 52px;
  background: rgb(140,140,140);
  background-position:left;
-
-background: -moz-linear-gradient(top,  rgb(140,140,140) 45%, rgb(86,86,86) 48%);
-
-background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,rgb(140,140,140)), color-stop(48%,rgb(86,86,86)));
-
-background: -webkit-linear-gradient(top,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
-
-background: -o-linear-gradient(top,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
-
-background: -ms-linear-gradient(top,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
-
-background: linear-gradient(to bottom,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8c8c', endColorstr='#565656',GradientType=0 );
-
-
-
-}
+ background: -moz-linear-gradient(top,  rgb(140,140,140) 45%, rgb(86,86,86) 48%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,rgb(140,140,140)), color-stop(48%,rgb(86,86,86)));
+ background: -webkit-linear-gradient(top,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
+ background: -o-linear-gradient(top,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
+ background: -ms-linear-gradient(top,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
+ background: linear-gradient(to bottom,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8c8c', endColorstr='#565656',GradientType=0 );
+ 
+ }
 
 .sixteen.columns.bordered {
 	background-position: 200px;
@@ -374,7 +365,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8c8c', end
 	
 .curso img {
 	background: #757575;
-	margin-rigth:20px;
+	margin-right:20px;
 	float: left;
 	padding: 6px;
 	-moz-box-shadow: 2px 3px 5px #333;
@@ -394,5 +385,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8c8c', end
     opacity: 0.3;
     -khtml-opacity: 0.3;
     display:block;
+    cursor: pointer
 	}
+/*Hover Texto Curso*/
+.block2 p{margin:8px;font-family:"Myriad Pro";font-size:15px;position: absolute}
+.block2 p{margin-top:-10px;-webkit-opacity: 0.05;-moz-opacity: 0.05;opacity: 0.05}
+.block2:hover p{display:block;color:#fff;-webkit-opacity: 1;-moz-opacity: 1;opacity:1;margin:60px 20px auto 50px;-webkit-transition: all .5s ease;-moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease;transition: all .5s ease;text-transform: uppercase}
+.block2:hover img{opacity: .5;background: rgba(0,0,0,.8)}
+
+ 
 	

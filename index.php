@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 	<meta charset="utf-8">
 	<title>Música Total</title>
 	<meta name="description" content="">
@@ -80,12 +79,19 @@
 	
  <div class="container">
          <div class="sixteen columns curso">
-         <img src="images/Guitarra.png"/>
-        
-
- <img src="images/Bajo.png"/>
-          <img src="images/Teclado.png"/>
- <img src="images/Bateria.png"/>
+            <div class="three columns block2" >
+                     <img src="images/Guitarra.png"/>
+                        <p>Guitarra</p>
+             </div> 
+                          <div class="three columns">
+                    <img src="images/Bajo.png"/>
+               </div>
+             <div class="three columns">
+                 <img src="images/Teclado.png"/>
+            </div>
+             <div class="three columns">
+                <img src="images/Bateria.png"/>
+            </div>
          </div>
         
     </div>
