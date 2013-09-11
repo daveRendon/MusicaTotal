@@ -76,7 +76,7 @@ jQuery(document).ready(function(){
         textbgcss:"display:block; position:absolute; top:0px; left:0px; width:100%; height:100%; background-color:#333333; opacity:0.6; filter:alpha(opacity=60);",
         navdirection:"horizontal",
         navborder:4,
-        bottomshadowimagewidth:110,
+        bottomshadowimagewidth:100,
         showtimer:false,
         navradius:0,
         navshowpreview:false,

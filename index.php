@@ -19,12 +19,11 @@
 
 	<link rel="shortcut icon" href="images/favicon.ico">
    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
-
+    
+     
     <script src="sliderengine/jquery.js"></script>
     <script src="sliderengine/amazingslider.js"></script>
     <script src="sliderengine/initslider-1.js"></script>
-     
-
   
 </head>
 <body>
@@ -42,7 +41,9 @@
              
     </header>
      
-     <div class="container sixteen columns bordered"> <?php include("menu.php")?>
+     <div class="container sixteen columns"> 
+
+    <?php include("menu.php")?>
 
          
         
@@ -51,7 +52,7 @@
     
   
     <div class="slider">
-    <div style="position:auto;max-width:1280px;">
+    <div >
     
     <div id="amazingslider-1" style="display:block;position:relative;margin:0px auto 0px;">
         <ul class="amazingslider-slides" style="display:none;">
@@ -81,16 +82,19 @@
          <div class="sixteen columns curso">
             <div class="three columns block2" >
                      <img src="images/Guitarra.png"/>
-                        <p>Guitarra</p>
+                     <p>Guitarra</p>
              </div> 
-                          <div class="three columns">
+              <div class="three columns block2">
                     <img src="images/Bajo.png"/>
+                    <p>Bajo</p>
                </div>
-             <div class="three columns">
+             <div class="three columns block2">
                  <img src="images/Teclado.png"/>
+                 <p>Teclado</p>
             </div>
-             <div class="three columns">
+             <div class="three columns block2">
                 <img src="images/Bateria.png"/>
+                <p>Batería</p>
             </div>
          </div>
         
@@ -108,5 +112,8 @@
         
     
     </div><!-- container sixteen columns-->
+   
+
+    
 </body>
 </html>

@@ -233,9 +233,7 @@
     /*Index*/
   
 
-#contenedor {
-	margin-left:0px;
-}
+#contenedor {	margin-left:0px}
 
 
 
@@ -272,60 +270,56 @@
 header{
         background: #000 url('../images/topBar.jpg') ;background-size: cover;
         height: auto;
-        overflow: hidden
+        overflow: hidden;
+        border-bottom:4px solid #e94c41
 	}
 /*MENU */
 
-#menu {
-	position:absolute;
-	padding-left:10%;
-	padding-top:22px
+/* nav */
+.menuPrincipal:before,
+.menuPrincipal:after {content: " "; display: table}
+.menuPrincipal:after {clear: both}
+.menuPrincipal{ *zoom: 1}
+
+nav {height: 40px;width: 100%;background:url('../images/bg-nav.jpg') repeat;font-size: 11pt;font-family: Arial, sans-serif;
+	position: relative}
+nav ul {padding: 0;margin: 0 auto;width: 99%;height: 40px;position: absolute;z-index: 1000;background: transparent;}
+nav li {display: inline;float: left;margin-left: 5%;
+        background: #59595a; /* Old browsers */
+background: -moz-linear-gradient(top,  #59595a 0%, #676769 50%, #59595b 52%, #59595b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#59595a), color-stop(50%,#676769), color-stop(52%,#59595b), color-stop(100%,#59595b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #59595a 0%,#676769 50%,#59595b 52%,#59595b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #59595a 0%,#676769 50%,#59595b 52%,#59595b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #59595a 0%,#676769 50%,#59595b 52%,#59595b 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #59595a 0%,#676769 50%,#59595b 52%,#59595b 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59595a', endColorstr='#59595b',GradientType=0 ); /* IE6-9 */
+
+	}
+nav a {color: #fff;display: inline-block;width: 110px;text-align: center;text-decoration: none;line-height: 40px;text-shadow: 1px 1px 0px #283744}
+nav li a {box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+	color:#fff}
+nav li:last-child a {border-right: 0}
+nav a:hover, nav a:active {font-size:20px;color:#fff;transition: all .2s;-webkit-transition: all .2s ease-in-out}
+nav a#pull {display: none;z-index:10000}
+
+@media screen and (max-width: 600px) {
+	nav { height: auto}
+  	nav ul {width: 100%;display: block;height: auto}
+  	nav li {width: 50%;float: left;position: relative}
+  	nav a {text-align: left;width: 100%;text-indent: 25px}
+  	nav a:hover, nav a:active {font-size:inherit}
+  	
+  	nav {border-bottom: 0}
+	
 }
-#menu ul li {
-	list-style:none;
-	display: inline;
-	padding:28px 30px;
-	font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
-    color: #FFF;
-}
+.slider{margin-top: -40px}
+
     
- .bordered{
-	position:absolute;
-	height: 52px;
-
-	background: rgb(160,160,160);
-background: -moz-linear-gradient(top,  rgb(160,160,160) 43%, rgb(135,135,135) 47%);
-
-background: -webkit-gradient(linear, left top, left bottom, color-stop(43%,rgb(160,160,160)), color-stop(47%,rgb(135,135,135)));
-
-background: -webkit-linear-gradient(top,  rgb(160,160,160) 43%,rgb(135,135,135) 47%);
-
-background: -o-linear-gradient(top,  rgb(160,160,160) 43%,rgb(135,135,135) 47%);
-
-background: -ms-linear-gradient(top,  rgb(160,160,160) 43%,rgb(135,135,135) 47%);
-
-background: linear-gradient(to bottom,  rgb(160,160,160) 43%,rgb(135,135,135) 47%);
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0a0a0', endColorstr='#878787',GradientType=0 );
-
-
-}
-
-.bordered:hover{
-	border: 2px; 
-	height: 52px;
- background: rgb(140,140,140);
- background-position:left;
- background: -moz-linear-gradient(top,  rgb(140,140,140) 45%, rgb(86,86,86) 48%);
- background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,rgb(140,140,140)), color-stop(48%,rgb(86,86,86)));
- background: -webkit-linear-gradient(top,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
- background: -o-linear-gradient(top,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
- background: -ms-linear-gradient(top,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
- background: linear-gradient(to bottom,  rgb(140,140,140) 45%,rgb(86,86,86) 48%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c8c8c', endColorstr='#565656',GradientType=0 );
+    
+    
+    
+    
  
- }
 
 .sixteen.columns.bordered {
 	background-position: 200px;
@@ -388,10 +382,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0a0a0', end
     cursor: pointer
 	}
 /*Hover Texto Curso*/
-.block2 p{margin:8px;font-family:"Myriad Pro";font-size:15px;position: absolute}
+.block2 p{margin:8px;font-family:"Myriad Pro";font-size:15px;position: absolute;cursor: pointer}
 .block2 p{margin-top:-10px;-webkit-opacity: 0.05;-moz-opacity: 0.05;opacity: 0.05}
 .block2:hover p{display:block;color:#fff;-webkit-opacity: 1;-moz-opacity: 1;opacity:1;margin:60px 20px auto 50px;-webkit-transition: all .5s ease;-moz-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease;transition: all .5s ease;text-transform: uppercase}
 .block2:hover img{opacity: .5;background: rgba(0,0,0,.8)}
+
 
  
 	
